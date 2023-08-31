@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="api.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2><i class="fa fa-nap-marker"></i><span id="location"></span></h2>
+            <h6 id="weather"></h6>
+            <h4><span id="temp"></span><sup>o</sup>C</h4>
+            <img src="10d@2x.png" id="icon">
+            <button class="refresh" onclick="windows.location.reload()"><img src="https://img.icons8.com/ios-glyphs/30/000000/refresh--v1.png" class="refresh"/></button>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="api.js"></script>
+
+</body>
+</html>
